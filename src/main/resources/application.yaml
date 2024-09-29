@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: online-library-system
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: library
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: Seyran001123
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: seyranebilov002@gmail.com
+    password: e w y o b g x h q y r r z fo l
+    protocol: smtp
+    properties:
+      mail.smtp:
+        auth: true
+        starttls:
+          enable: true
+
+logging:
+  level:
+    org.springframework.aop: DEBUG
+    az.company.onlinelibrarysystem.aop: INFO
+
+server:
+  port: 8080
